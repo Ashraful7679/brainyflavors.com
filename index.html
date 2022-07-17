@@ -1,575 +1,260 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	  "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Created by 🌍🌎🌏ᴀɪᴍ🌍🌎🌏 -->
+
+<!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><META NAME="geo.position" CONTENT="37.771007;-122.412694" />
-	<title>Brainy_Flavors</title>
-	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	<link href="https://www.brainyflavors.com/blog/openid/server" rel="openid.server" />
-	<link href="https://www.brainyflavors.com/blog/author/brainyflavors/" rel="openid.delegate" /><meta http-equiv="X-XRDS-Location"  content="https://www.brainyflavors.com/blog/?xrds" /><meta http-equiv="X-Yadis-Location" content="https://www.brainyflavors.com/blog/?xrds" /><meta http-equiv="X-Pingback" content="https://www.brainyflavors.com/blog/xmlrpc.php" />
-	<link href="https://www.brainyflavors.com/" rel="me" />
-	<link href="https://www.brainyflavors.com/blog/" rel="me" /><META NAME="viewport" CONTENT="width=device-width" /><META NAME="description"
-    CONTENT="We are Brainy Flavors. In this webspace, we play different kinds of roles like Data collection and categorization, SEO to your Shopify store, handling social account, Wordpress web design, graphics design, web programming with PHP and JAVA, object-oriented programming with Python, Content Writing and so on. We always emphasize in quality work. Feel free to knock if you are looking for quality work. We always prefer to work with smart clients." /><SCRIPT ASYNC type="text/javascript" SRC="/brainyflavors.js">(function(i,s,o,g,r,a,m){
-  i['GoogleAnalyticsObject']=r;
-  i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)
-  },i[r].l=1*new Date();
-  a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];
-  a.async=1;
-  a.src=g;
-  m.parentNode.insertBefore(a,m)
-}) (window,document,'script',
-    'https://www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-19975147-1', 'auto');
-ga('send', 'pageview');</SCRIPT>
-	<style type="text/css"><!--
-  body,pre,b { font-size: 13pt; line-height: 15pt;
-   font-family: "Bitstream Vera Sans Mono", Menlo, "Courier New", Courier, monospace }
-  b { font-weight: bold; color:#00ff00; 000; position:relative; }
-  body { width: 47.5em; margin: 0.5em auto; }
-  pre { position:relative; }
-  a:hover { background:rgba(85, 187, 16, 0.137); text-decoration:none;
-            border:1px solid rgb(17, 0, 255); margin:-17px; padding:12px;
-            position:relative; z-index:1; }
- .c { height:2520pt; overflow:hidden; cursor:default; }
- -->
-	</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="https://i.postimg.cc/tgT9zQt8/sololearn.png" title="sololearn" type="" />
+    <title>Sololearn clone</title>
 </head>
-<body alink="#FFFFFF" bgcolor="#000000" data-gr-c-s-loaded="true" link="#00FF00" text="#00CC00" vlink="#44FF44"><!-- mail me if you find the secret --><!--   (no, you can't have a hint)  -->
-<div class="c">
-<pre>
-0371600  E3 50 34 10 16 E2 50 1F 46 62 44 27 F0 33 09 D3   .P4...P.FbD&#39;.3..
-0371620  E7 61 0E 12 0F 0A 26 02 43 9B 43 C8 C7 B6 1A 45   .a....&amp;.C.C....E
-0371640  7A E2 E7 A8 FF FF 7F EB 5A 00 46 32 28 40 22 F6   z.......Z.F2(@&quot;.
-0371660  A5 C3 FF CF 04 23 8C 10 09 6A 67 07 DE 30 A4 30   .....#...jg..0.0
-0371700  16 43 6F CE 6E 21 64 9F 48 43 93 71 95 D9 20 88   .Co.n!d.HC.q.. .
-0371720  2A AA CB 5E 6A 96 EE DB B6 0D 40 0A 90 59 D8 22   *..^j.....@..Y.&quot;
-0371740  9D 45 63 27 2C 64 FF CF 44 23 AC 10 15 D6 78 1A   .Ec&#39;,d..D#....x.
-0371760  7E 30 40 56 51 76 F3 94 8B 26 EC EB 6E DF FF FE   ~0@VQv...&amp;..n...
-0372000  FE AA AC 9E 26 F7 4F 38 40 81 4F 82 22 07 37 C7   ....&amp;.O8@.O.&quot;.7.
-0372020  A9 34 A8 70 D1 68 90 1B 29 A8 5C FF CF 04 23 5C   .4.p.h..).\...#\
-0372040  10 18 EC 64 1F 5C 00 D0 66 BC 70 43 CD FC BF FA   ...d.\..f.pC....
-0372060  7F 54 A2 E1 A1 ED B6 15 40 C0 13 20 25 6D CE 06   .T......@.. %m..
-0372100  DA AC 9F B6 64 2D 1D DD 3E CC B7 54 C7 08 EB FF   ....d-..&gt;..T....
-0372120  CF 04 23 02 10 1D 74 7B 0B 86 61 00 8A B8 9D FD   ..#...t{..a.....
-0372140  17 22 1E 6E DD BE 0D C1 40 1A 51 7B 27 DC 58 68   .&quot;.n....@.Q{&#39;.Xh
-0372160  C5 8A 61 62 BE A3 EC 51 A7 25 61 CD FE EC A5 8F   ..ab...Q.%a.....
-0372200  CE 01 2B FF CF 04 23 22 10 01 CD 70 1F 8A 61 C0   ..+...#&quot;...p..a.
-0372220  3E 0A 3A 1A 49 F1 FE B5 97 E9 FF F5 DF 5A 24 0D   &gt;.:.I........Z$.
-0372240  4F 1D A3 7E 62 47 0C 6E 2E 3B FB 7A 32 93 05 1F   O..~bG.n.;.z2...
-0372260  1D 0A 1E 4B F4 A0 4B FF CF 44 23 92 50 03 EB 60   ...K..K..D#.P..`
-0372300  1F 86 61 70 44 58 A2 FE 6C AB FF B1 1C F8 E2 03   ..apDX..l.......
-0372320  55 4E DB B6 6D 6A 18 88 A2 D2 08 22 16 9E 32 4F   UN..mj.....&quot;..2O
-0372340  A1 1F 2F 4E 56 C6 86 3D FD E4 90 67 FF CF 04 23   ../NV..=...g...#
-0372360  62 50 03 76 5F 1A 5E 0A 60 21 A6 3F 6B 28 3B D4   bP.v_.^.`!.?k(;.
-0372400  BF F2 FF 7F 69 64 2A D5 AA E9 B6 B5 ED 56 18 41   ....id*......V.A
-0372420  A4 BA 44 0C 91 59 D6 D0 A5 D9 63 6F 89 34 5D 99   ..D..Y....co.4].
-0372440  FF CF 04 23 42 50 99 66 7B 1A 1A 62 EF 4D 45 A9   ...#BP.f{..b.ME.
-0372460  9A BE 91 26 8C A6 AF F6 33 CF 75 FB FF 8F AB 70   ...&amp;....3.u....p
-0372500  1C 9B 8E 2B 40 49 44 85 5B 56 8B 22 8F 42 68 73   ...+@ID.[V.&quot;.Bhs
-0372520  81 20 DA 4C FF CF 04 23 7C 50 8C 66 67 1A 5E 22   . .L...#|P.fg.^&quot;
-0372540  48 68 DE D4 BE 95 25 45 AC A1 75 8D 11 CB 7B 63   Hh....%E..u...{c
-0372560  DF EB E4 32 61 E4 E5 65 09 08 28 7C E7 FE C6 54   ...2a..e..(|...T
-0372600  D3 15 85 EC A2 96 8D 72 FF CF 44 23 3C F0 0D 77   .......r..D#&lt;..w
-0372620  6D 1A 1E 33 22 CF 7F 82 DD F6 BD 6D DB 22 2E 80   m..3&quot;......m.&quot;..
-0372640  51 61 23 C0 2A 75 20 63 A1 2C 86 40 58 A8 1E 6D   Qa#.*u c.,.@X..m
-0372660  00 85 C9 9A C2 F6 B2 DA <b>62 72 61 69 6E 79</b> 84   ........O.<b>BRAINY</b>.
-0372700  23 A4 30 19 C3 <b>66 6C 61 76 6F 72 73</b> FC 45 50 D3  #.0..<b>FLAVORS</b>.EP
-0372720  F6 3F DC FB D5 2F BF 56 62 1E 61 EB B6 0D 41 AE   .?.../.Vb.a...A.
-0372740  08 39 A2 F2 0A 3E 46 BC 78 41 27 12 B4 18 5B D0   .9...&gt;F.xA&#39;...[.
-0372760  77 FF CF 04 23 98 50 09 4B 7F 1F 86 21 61 AE 5B   w...#.P.K...!a.[
-0373000  22 D0 B5 57 64 27 CA 52 3B 46 DD 26 AA EA 5F 55   &quot;..Wd&#39;.R;F.&amp;.._U
-0373020  6A 1E 19 FF BF 0F ED 65 9E 86 D6 1E DC FF 82 AA   j......e........
-0373040  56 99 E4 6B 18 FF CF 04 23 A8 50 1A C9 50 1F D2   V..k....#.P..P..
-0373060  50 52 2A 0D 52 DA 82 D6 14 25 F2 C4 84 D6 C3 CA   PR*.R....%......
-0373100  BA FB 57 A8 FE BF A8 AC 11 11 FB DE 06 46 86 91   ..W..........F..
-0373120  8D 61 62 A5 6F 26 95 D8 7C FF CF 44 23 48 50 8E   .ab.o&amp;..|..D#HP.
-0373140  66 4B 1F 06 23 B5 B2 B1 B3 D0 E3 22 A2 8D F4 C1   fK..#......&quot;....
-0373160  B5 EA AB AC 3E F3 FD ED FE E5 FF 5F F1 93 49 FF   ....&gt;......_..I.
-0373200  B5 6D 57 18 E7 3A F0 D1 AA A9 25 C0 46 10 FF CF   .mW..:....%.F...
-0373220  04 23 08 90 05 76 4F 1A 52 60 74 03 AE AB 50 92   .#...vO.R`t...P.
-0373240  A9 A0 12 C3 85 0B 95 A2 3D A6 60 60 66 B8 ED FF   ........=.``f...
-0373260  0C AD CE B6 D6 8E 6B 10 A1 51 A9 8C 86 86 53 16   ......k..Q....S.
-0373300  B2 38 FF CF 04 23 08 10 13 7A 43 1A D4 63 00 15   .8...#...zC..c..
-0373320  87 29 9C <b><a href="music.html">6E</a></b> <b><a href="music.html">75</a></b> <b><a href="music.html">73</a></b> <b><a href="music.html">69</a></b> <b><a href="music.html">63</a></b> DA 5B 18 5E 69 4C B7 FF   .).<b><a href="music.html">music</a></b>.[.^iL..
-0373340  9F A9 54 64 22 91 54 0A 38 7D C0 B5 77 B8 5B 48   ..Td&quot;.T.8}..w.[H
-0373360  DC 59 A9 05 8A 9C FF CF 04 23 C8 10 1E 6D 4D 0A   .Y.......#...mM.
-0373400  12 22 1A CF B9 2A 8B 0A DC 17 CA 2D 03 EC BE 4A   .&quot;...*.....-...J
-0373420  52 F4 D9 B6 B5 5D 17 04 4F 4F 5E CA C3 99 E1 FE   R....]..OO^.....
-0373440  D4 AF AB 8D F6 D9 DF 57 8A 32 FF CF 44 23 18 10   .......W.2..D#..
-0373460  1B 46 77 9A F2 08 40 5C 19 7D 31 2A D1 7F F9 5F   .Fw...@\.}1*..._
-0373500  4B AE 53 A9 BB B6 69 D3 06 0D 96 <b><a href="cube.html">63</a></b> <b><a href="cube.html">75</a></b> <b><a href="cube.html">62</a></b> <b><a href="cube.html">65</a></b> D8   K.S...i....<b><a href="cube.html">cube</a></b>.
-0373520  66 41 91 F8 4F E2 D3 88 38 DF F6 F5 9A 32 23 FF   fA..O...8....2#.
-0373540  CF 04 23 38 F0 0D 7F 7F BA 31 1C 40 64 EC 7D 1B   ..#8.....1.@d.}.
-0373560  3A 36 FB 62 0C 3D 95 F8 D5 09 CA 63 E1 19 9A 5C   :6.b.=.....c...\
-0373600  4A A1 12 05 44 FE 6D 4F D0 C6 F9 FF BF 29 65 CD   J...D.mO.....)e.
-0373620  BE AD 59 FF CF 04 23 20 90 15 D6 58 9A 63 08 40   ..Y...# ...X.c.@
-0373640  53 A4 6F 8E 80 77 3A 5A 9B 71 B5 F5 55 F5 1E 15   S.o..w:Z.q..U...
-0373660  0C B7 47 4C 88 18 9E F9 EC CE 2C F1 7F 6D FA 77   ..GL......,..m.w
-0373700  01 EB A6 2C 1A EE 6B FF CF 04 23 20 10 05 DA 58   ...,..k...# ...X
-0373720  1F 14 63 40 DB 34 C1 80 E0 54 DA 04 2C 80 2C F8   ..c@.4...T..,.,.
-0373740  8E 32 C7 B4 AC B5 2A 09 D6 69 E9 EB 06 BD FE AE   .2....*..i......
-0373760  2C 8E A2 18 EA 22 5A 0F 72 0C 62 FF CF 44 23 10   ,....&quot;Z.r.b..D#.
-0374000  10 03 62 DB <b><a href="https://www.fiverr.com/brainy_flavors">77</a></b> <b><a href="https://www.fiverr.com/brainy_flavors">6F</a></b> <b><a href="https://www.fiverr.com/brainy_flavors">72</a></b> <b><a href="https://www.fiverr.com/brainy_flavors">6B</a></b> F8 B9 48 07 EF DE 70 CA   ..b.<b><a href="https://www.fiverr.com/brainy_flavors">work</a></b>..H...p.
-0374020  60 68 4A 61 49 E4 00 7B B0 55 54 9B C9 CA F8 BF   `hJaI..{.UT.....
-0374040  BF FF 97 DC 1B 49 8A 0A 08 1E 3E 3C 24 F8 68 A8   .....I....&gt;&lt;$.h.
-0374060  FF CF 04 23 B0 10 03 68 6B 0A 8A 21 00 44 93 04   ...#...hk..!.D..
-0374100  17 8B 6E B4 90 34 AE 67 49 74 23 AC 4E 6A C4 DB   ..n..4.gIt#.Nj..
-0374120  CB C5 D7 CE D6 A6 6D 9B 00 07 3C 16 CE 47 30 88   ......m...&lt;..G0.
-0374140  4B 8E 27 93 FF CF 04 23 88 10 0E F6 40 1A 12 62   K.&#39;....#....@..b
-0374160  62 85 0D 1F 4B D2 5C 44 78 AB AA 78 40 95 7E DD   b...K.\Dx..x@.~.
-0374200  FA A5 62 1E E1 FB BF A1 05 15 48 61 90 43 53 E3   ..b.......Ha.CS.
-0374220  E0 86 54 86 62 5B 86 83 FF CF 04 23 68 10 0D C2   ..T.b[.....#h...
-0374240  48 1F 5C 60 40 04 A4 60 5F 5C 18 CE 2F 4F BB EE   H.\`@..`_\../O..
-0374260  0B AA 4A FF B5 DB 06 18 23 2D 49 1F B2 0B 01 C4   ..J.....#-I.....
-0374300  5E 4B 50 A1 3C 24 42 A4 8E 01 1A 4D FF CF 44 23   ^KP.&lt;$B....M..D#
-0374320  58 10 06 6A 4F 1A 1A 62 E4 <b><a href="hacks/">68</a></b> <b><a href="hacks/">61</a></b> <b><a href="hacks/">63</a></b> <b><a href="hacks/">6B</a></b> <b><a href="hacks/">73</a></b> FF 9F   X..jO..b.<b><a href="hacks/">hacks</a></b>..
-0374340  AD 4E B7 B5 DB 56 18 90 00 DC DD 6E 6C 9D EB 75   .N...V.....nl..u
-0374360  2C 15 7D 76 AF 11 00 AC 23 13 69 F3 F2 88 E6 C1   ,.}v....#.i.....
-0374400  6B FF CF 04 23 04 10 0E 5E 77 9A 12 08 40 FE 85   k...#...^w...@..
-0374420  80 5D 03 1C 2D 60 4F F1 FC 5C C3 7C AC F7 BD 54   .]..-`O..\.|...T
-0374440  99 42 20 A7 AE EE 9C FA D5 BF F6 7D 91 7F 5D 85   .B ........}..].
-0374460  E7 94 4F 9D E5 FF CF 04 23 A4 F0 85 65 39 80 F1   ..O.....#...e9..
-0374500  1C 00 78 86 9F 0E 0D BC 66 22 35 02 6C E6 6B 41   ..x.....f&quot;5.l.kA
-0374520  04 DF 4C 6C AF E7 4A 59 B5 CD 1E AB 91 6B 2F 5D   ..Ll..JY.....k/]
-0374540  5A 7B 4D 63 03 01 B0 96 C4 FF CF 04 23 B0 D0 84   Z{Mc........#...
-0374560  FA 70 9A C1 08 C0 51 20 5F 46 A3 A6 2A 4C D9 6E   .p....Q _F..*L.n
-0374600  6C 8E 9E C8 8C 98 0B 77 4E DC F3 AE 7E B5 97 5F   l......wN...~.._
-0374620  FE 7F 8D 25 0E AF 6D FF 7D DD 8A 04 A7 FF CF 44   ...%..m.}......D
-0374640  23 E0 10 17 CA 68 9A 63 08 40 CE AC 1B 37 28 9E   #....h.c.@...7(.
-0374660  C9 74 9B 31 12 04 9A 2D 95 42 D2 18 70 93 EC B9   .t.1...-.B..p...
-0374700  BF 7D 8F AE 2A B4 5A 11 11 11 9E 11 FE 01 18 4A   .}..*.Z........J
-0374720  01 B4 <b><a href="doc/">74</a></b> <b><a href="doc/">65</a></b> <b><a href="doc/">63</a></b> <b><a href="doc/">68</a></b> D0 10 08 F1 F4 18 06 22 46 D1   ..<b><a href="doc/">order</a></b>.......&quot;F.
-0374740  9A A1 72 C4 B6 90 2C 32 BD A7 64 13 AD B8 D4 FB   ..r...,2..d.....
-0374760  90 3C 6E 57 57 FB F7 6E 6D 1B 00 83 1B 03 70 04   .&lt;nWW..nm.....p.
-0375000  0F DF A3 54 E6 73 FF CF 04 23 88 10 01 E6 40 1A   ...T.s...#....@.
-0375020  DE 20 54 FA 35 70 19 B5 62 30 85 AE EA 78 5B 76   . T.5p..b0...x[v
-0375040  CA A4 72 56 E9 BB 2D 59 1F 0D 85 D3 A1 45 04 3D   ..rV..-Y.....E.=
-0375060  81 C8 8B 0C 44 2A EB A1 D0 83 FF CF 04 23 68 10   ....D*.......#h.
-0375100  15 42 4B 0A 54 63 00 A9 2A 2B EC 03 F4 FB E6 5F   .BK.Tc..*+....._
-0375120  5B FB E2 BE DD F7 76 DD 56 04 41 18 7A 88 4A 10   [.....v.V.A.z.J.
-0375140  1E 2C 08 3C 41 0E 99 E3 5D C0 38 74 60 4B FF CF   .,.&lt;A...].8t`K..
-0375160  04 23 58 10 03 E4 40 1A 48 23 40 81 E7 C1 BB 53   .#X...@.H#@....S
-0375200  AE FB 47 55 DD B7 AE EB 5A 04 6F 19 CD 8E BB 86   ..GU....Z.o.....
-0375220  B3 66 65 D6 2E 76 CE E0 C0 06 4F 2B 4A 4E 66 79   .fe..v....O+JNfy
-0375240  37 D5 FF CF 44 23 78 10 02 6E 7F 1A 1E 62 52 FF   7...D#x..n...bR.
-0375260  CF D4 DD F7 AD DB 56 14 19 A2 4A B9 01 A2 25 0B   ......V...J...%.
-0375300  26 30 22 46 63 E6 23 D8 72 C8 D6 3A 7C C5 76 DF   &amp;0&quot;Fc.#.r..:|.v.
-0375320  FC 35 85 7B AD D9 BA FF CF 04 23 A4 10 05 64 7F   .5.{......#...d.
-0375340  1A D0 22 40 B5 ED 5A 04 59 08 8A F2 58 F0 BF DD   ..&quot;@..Z.Y...X...
-0375360  88 DA 14 66 58 D4 90 4B 22 37 33 B9 B8 7B F1 4F   ...fX..K&quot;73..{.O
-0375400  76 46 E9 F6 62 DB 0A 00 8B 0E 32 FF CF 04 23 94   vF..b.....2...#.
-0375420  E0 17 5A 77 1A D0 62 60 F9 53 47 3B D8 14 C6 FC   ..Zw..b`.SG;....
-0375440  55 7A 08 80 02 BB F2 CE 05 B1 02 33 44 B8 C8 83   Uz.........3D...
-0375460  50 EB FF AD DB 07 00 4E 83 42 4B 0B 4A 12 29 FF   P......N.BK.J.).
-0375500  CF 04 23 0C 10 06 C3 48 1A 50 22 70 12 B4 A1 5D   ..#....H.P&quot;p...]
-0375520  3C 69 6D 36 6E 8A E4 E6 15 29 28 67 A2 F8 04 1B   &lt;im6n....)(g....
-0375540  23 59 AA 1E 19 DB B7 6D C0 D0 9C BE 76 8B 3A 42   #Y.....m....v.:B
-0375560  F2 32 61 FF CF 44 23 AC 10 07 C7 64 1A 0C 62 72   .2a..D#....d..br
-0375600  93 BC 34 86 F1 39 5A 12 A5 BD 80 E6 79 FC 8B FD   ..4..9Z.....y...
-0375620  24 55 62 11 6E DD DA 15 C0 75 58 60 18 45 3A B1   $Ub.n....uX`.E:.
-0375640  75 CE 2A AE 34 0F C2 2C FF CF 04 23 9C 10 05 DE   u.*.4..,...#....
-0375660  74 1F 94 21 48 0E 9B 5C 62 7C BD 97 D1 05 5E 57   t..!H..\b|....^W
-0375700  D9 DB 26 49 1A 00 0D 1F CE 80 00 C3 4A C0 94 8B   ..&amp;I........J...
-0375720  36 A2 36 AA 8E FE EC C6 DF 1C E1 3F FF CF 04 23   6.6........?...#
-0375740  BC 10 08 EE 78 1F 92 61 70 FB BD A2 D3 7E B7 AB   ....x..ap....~..
-0375760  D9 F6 6E DD DA C2 93 6C 45 97 BC 3C 4C 24 78 14   ..n....lE..&lt;L$x.
-0376000  AF 15 B1 E0 D4 D4 00 9C 12 5C 07 D9 AA DD 9C AA   .........\......
-0376020  FF CF 04 23 C2 10 11 C4 40 1A DE 30 C0 23 48 BC   ...#....@..0.#H.
-0376040  73 F8 FF 2B A8 1E AE DF B6 36 41 64 E2 E9 88 7D   s..+.....6Ad...}
-0376060  A7 01 84 75 17 FF 25 8F 5D BE 54 FB AC 12 0A 7F   ...u..%.].T.....
-0376100  2E 38 DC A3 FF CF 44 23 E2 90 1D E6 60 1A 1E 61   .8....D#....`..a
-0376120  54 1B B4 4E A1 62 CE A5 6E F5 65 EE BF 7F DB D6   T..N.b..n.e.....
-0376140  04 01 7F C3 D2 DD 56 C5 9B 38 A5 1F AE E3 10 B6   ......V..8......
-0376160  A5 8D 85 9B F2 1F 98 2F 51 FF CF 04 23 12 50 0E   ......./Q...#.P.
-0376200  5D 7F 1F 48 62 68 65 0B 4C E3 45 D7 23 A9 36 A7   ]..Hbhe.L.E.#.6.
-0376220  13 59 A2 C9 BA AF DD 5A 18 1D 2A 9B 6A DD C6 F0   .Y.....Z..*.j...
-0376240  BF 6C 7C 48 50 89 41 F0 FB E6 FB E2 C8 FF CF 04   .l|HP.A.........
-0376260  23 A2 50 15 59 4F 1A 86 61 56 AA 06 00 D4 DF 3F   #.P.YO..aV.....?
-0376300  BB FF 87 A1 55 88 E9 45 B6 43 A1 2E 53 42 57 74   ....U..E.C..SBWt
-0376320  FF 11 20 B3 DD DD 99 DD 01 60 E8 E0 2B 8E 09 8F   .. ......`..+...
-0376340  72 FF CF 04 23 82 90 10 69 57 1A 46 22 48 05 E3   r...#...iW.F&quot;H..
-0376360  FF AD 46 0F B1 70 5D 4B AE 1B 2E E0 49 19 0A 12   ..F..p]K....I...
-0376400  93 0B 0A 6A 03 FF 97 A9 D4 1B EA 00 48 4E 20 50   ...j........HN P
-0376420  23 16 1A 38 18 FF CF 44 23 C2 10 15 4E 43 12 98   #..8...D#...NC..
-0376440  61 08 47 61 33 F9 5C 2D 91 63 C4 F5 94 A2 C3 5C   a.Ga3.\-.c.....\
-0376460  A5 C3 91 8A 43 84 B6 56 2B 2B A5 88 AE EE B7 B5   ....C..V++......
-0376500  6D D3 20 01 80 59 25 C2 8F DA FF CF 04 23 12 70   m. ..Y%......#.p
-0376520  05 65 4B 2A 0C 33 1C 53 74 74 AB 06 DD 61 34 50   .eK*.3.Stt...a4P
-0376540  E9 BC D7 6C F4 BC 56 47 53 2F D8 D8 7F D4 EF 2F   ...l..VGS/...../
-0376560  5F 5E AA C6 EE E1 EF DA B6 40 0A 12 1A 63 FF CF   _^.......@...c..
-0376600  04 23 2C 50 08 D8 48 7A 50 22 40 AA 20 70 67 02   .#,P..HzP&quot;@. pg.
-0376620  AE FE 2E 3A 42 A7 B0 CA 42 F9 A4 6F AD 53 A8 70   ...:B...B..o.S.p
-0376640  A4 50 11 19 19 1E 6E D6 01 18 8A B8 32 11 89 0B   .P....n.....2...
-0376660  C8 56 FF CF 04 23 4C 10 1A E1 68 1F 14 22 50 D7   .V...#L...h..&quot;P.
-0376700  4E D5 22 CC 74 AA 78 84 74 81 88 E6 91 11 89 E8   N.&quot;.t.x.t.......
-0376720  DF D5 27 54 EB F7 B7 6B 0B 18 53 34 FF 0A 06 0D   ..&#39;T...k..S4....
-0376740  B0 65 DE 1A 16 CE FF CF 44 23 EC 90 08 E6 F8 18   .e......D#......
-0376760  9E 21 74 12 92 C3 20 D1 9D 82 91 27 B4 13 ED B9   .!t... ....&#39;....
-0377000  86 EC FE FF AF AA 6B D6 6C DB 06 00 A9 0A 61 C9   ......k.l.....a.
-0377020  07 41 85 B4 15 60 0C AB F6 51 ED FF CF 04 23 5C   .A...`...Q....#\
-0377040  90 10 E2 60 1A 9E 49 42 0A 9E CA CB E0 76 30 A1   ...`..IB.....v0.
-0377060  D3 95 DA 13 54 92 1D 27 6D 1B 18 0F A3 3E 30 67   ....T..&#39;m....&gt;0g
-0377100  75 4B 35 F7 80 9D 56 50 14 7A 14 8F 4A F4 A0 FF   uK5...VP.z..J...
-0377120  CF 04 23 3C 10 12 C9 50 1A 9E 62 64 E0 C9 68 AC   ..#&lt;...P..bd..h.
-0377140  FD 9B FF F7 65 90 F3 AF FB 0E 00 1E 74 C2 D2 93   ....e.......t...
-0377160  D6 B8 56 CD 65 C9 73 4D DA 4B CB 9A 57 99 43 1B   ..V.e.sM.K..W.C.
-0377200  E3 EE AD FF CF 04 23 82 10 0D 5C 77 1A 5E 62 60   ......#...\w.^b`
-0377220  7E 67 2B CC A5 80 93 D8 B1 9D 38 49 5B 09 24 68   ~g+.......8I[.$h
-0377240  00 30 4A B9 C6 0A C0 49 17 03 EE A6 AE C6 2A 5B   .0J....I......*[
-0377260  67 7D FD 99 78 6F 71 FF CF 44 23 A2 10 03 49 73   g}..xoq..D#...Is
-0377300  9A D2 18 80 9D D7 5D AB BD 20 F9 1C 88 D6 28 63   ......].. ....(c
-0377320  37 5C 0F 9B 21 B0 44 19 06 6B 30 21 D9 FF 37 7E   7\..!.D..k0!..7~
-0377340  34 53 55 00 EC AE 6F 6B 00 43 E4 7B FF CF 04 23   4SU...ok.C.{...#
-0377360  52 08 08 52 43 BA 19 08 00 F7 A7 74 57 0F 07 C9   R..RC......tW...
-0377400  A8 13 34 1C B8 83 80 18 01 73 ED 28 4E A9 53 54   ..4......s.(N.ST
-0377420  82 E0 82 87 8F F8 25 88 00 81 18 8A 04 4C C6 FC   ......%......L..
-0377440  FF CF 04 23 0C 30 09 5B 6B 9A 13 12 00 3E 4E 54   ...#.0.[k....&gt;NT
-0377460  4E BB 36 4D D3 00 41 15 B1 69 C1 1C A3 E1 30 12   N.6M..A..i....0.
-0377500  58 0C 0D A6 4F 55 DE 96 C8 B5 99 0A 84 16 49 FF   X...OU........I.
-0377520  CA F1 45 AC FF CF 04 23 24 10 0D E4 50 1A 54 22   ..E....#$...P.T&quot;
-0377540  40 66 11 FB F6 6D C0 10 94 97 BC 51 20 D2 61 34   @f...m.....Q .a4
-0377560  6E 02 0B 28 60 64 F4 54 72 36 CC 68 BD 33 C5 C5   n..(`d.Tr6.h.3..
-0377600  46 AB F8 DD F7 B7 6D 8B FF CF 44 23 14 10 1D CE   F.....m...D#....
-0377620  64 1F 08 62 64 00 37 A2 14 20 04 B9 69 D5 D7 2F   d..bd.7.. ..i../
-0377640  31 69 92 9B 06 A9 BA BA F7 83 1D A5 F5 AD 9B F6   1i..............
-0377660  5F A9 6A 53 CB 4A 5A 49 C9 AC 36 B0 3C FF CF 04   _.jS.JZI..6.&lt;...
-0377700  23 B4 10 0A F1 68 1A 9E 21 48 86 C6 81 1D 99 41   #....h..!H.....A
-0377720  08 06 3B CD 7B 8D 21 DC 74 99 3E 61 61 57 57 EA   ..;.{.!.t.&gt;aaWW.
-0377740  3D 55 24 5E 21 E6 E1 F6 06 08 20 BA F0 9D 2A E3   =U$^!..... ...*.
-0377760  B7 FF CF 04 23 4C 10 15 68 6B 0A 9E 01 00 C1 92   ....#L..hk......
-0400000  A8 F0 38 74 05 06 C3 F2 48 00 23 5A 48 4C D4 F6   ..8t....H.#ZHL..
-0400020  3F 4A 20 95 E5 D9 BF AD 42 61 57 97 02 93 45 0C   ?J .....BaW...E.
-0400040  38 5C 42 CD 15 FF CF 04 23 6C 10 0D 42 C7 18 9C   8\B.....#l..B...
-0400060  21 10 06 8B AC 22 1B 4F 14 7C 6A A7 63 1F 8E 76   !....&quot;.O.|j.c..v
-0400100  DD AD A8 CE B6 6D 6B 0B 04 1D 70 F1 68 78 3B B5   .....mk...p.hx;.
-0400120  DF 5E 9B 90 87 87 83 4E 87 FF CF 44 23 5C 10 1B   .^.....N...D#\..
-0400140  54 5B 1F 92 01 20 EF E0 70 F6 56 35 F2 FF 87 AD   T[... ..p.V5....
-0400160  25 64 74 9B 24 69 1A 08 2A 9C 07 6B 3C C7 5F 82   %dt.$i..*..k&lt;._.
-0400200  5D 02 C5 06 9B CE 95 1E 89 97 EB 4E C2 C5 FF CF   ]..........N....
-0400220  04 23 7C 10 1E 4E 77 1A 06 61 40 C4 9D D7 FC 49   .#|..Nw..a@....I
-0400240  70 54 02 C1 B5 2C 1C B0 80 0D 62 49 52 B8 70 7F   pT...,....bIR.p.
-0400260  C6 82 61 FF 55 63 7A 31 A9 C2 CF B9 E3 B2 7F 00   ..a.Ucz1........
-0400300  70 04 FF CF 04 23 C2 10 0D 74 6B 9A 92 08 40 A1   p....#...tk...@.
-0400320  6D 7F 75 D3 DE 4C 7E 6E BE 33 14 C4 F4 77 18 3F   m.u..L~n.3...w.?
-0400340  CB 61 1D 0D 05 8E 08 3A C2 FF 4F 67 59 3A A1 92   .a.....:..OgY:..
-0400360  9D 34 4E 03 00 1F FF CF 04 23 E2 F0 97 43 83 99   .4N......#...C..
-0400400  91 14 00 00 27 82 E9 99 2D 46 AF A9 A1 69 7A 77   ....&#39;...-F...izw
-0400420  53 73 91 06 04 46 30 F4 50 3C 77 04 F9 FF 6D 5B   Ss...F0.P&lt;w...m[
-0400440  53 00 05 10 38 E2 C0 E5 68 6C FF CF 44 23 74 10   S...8...hl..D#t.
-0400460  00 5D 7F 9A C3 08 C0 01 21 EA 54 2E 31 AF 9F 36   .]......!.T.1..6
-0400500  6C 80 38 47 47 1B C0 55 4B D8 B5 DD FE AF 59 8B   l.8GG..UK.....Y.
-0400520  20 C7 89 72 49 D2 53 0B BE E3 B2 08 B4 E3 E1 FF    ..rI.S.........
-0400540  CF 04 23 6C 10 01 C1 68 1A DC 63 60 E6 A8 3D A5   ..#l...h..c`..=.
-0400560  DE 25 F5 54 44 DC AF AA F7 FF D6 39 9C 59 BF 6D   .%.TD......9.Y.m
-0400600  6B 1B 18 27 90 1D 57 C2 BB 09 CA 68 EB AD BD 9B   k..&#39;..W....h....
-0400620  A3 0D AE FF CF 04 23 DC 90 0C F2 70 1A 5E 62 44   ......#....p.^bD
-0400640  DA 28 CE F3 D0 E0 86 64 DA 70 88 AC AF FE 7B 7E   .(.....d.p....{~
-0400660  B7 B5 6D 1B 00 C7 8E 20 28 C1 BD 48 1B 20 28 3D   ..m.... (..H. (=
-0400700  47 F6 AE 73 D9 D1 79 FF CF 04 23 BC 90 1C C1 50   G..s..y...#....P
-0400720  1A 1E 23 54 51 BA 21 B0 32 05 2A 54 01 F5 AB E6   ..#TQ.!.2.*T....
-0400740  91 19 11 EE BE 01 38 48 B1 D0 4F CD 00 C2 29 14   ......8H..O...).
-0400760  03 17 05 09 85 2F B1 1E B2 44 9B FF CF 44 23 FC   ...../...D...D#.
-0401000  10 1D DD 70 1A 12 62 44 C8 2F 74 4E DB 95 EF FF   ...p..bD./tN....
-0401020  6F 6B DB 04 01 94 07 46 6C BD 87 73 46 6A CD 20   ok.....Fl..sFj. 
-0401040  7B A3 20 77 04 7E C7 F2 50 05 24 D8 77 3F AF BF   {. w.~..P.$.w?..
-0401060  FF CF 04 23 22 10 01 C2 F4 18 0C 63 64 50 26 EE   ...#&quot;......cdP&amp;.
-0401100  19 DF D7 AE 80 00 B7 B8 6A DE 29 11 9B A5 35 46   ........j.)...5F
-0401120  FA 5D 11 1A 54 59 42 48 FC 3D 9D 33 87 47 1D 0F   .]..TYBH.=.3.G..
-0401140  A7 CE D6 B4 FF CF 04 23 92 10 19 D2 58 1A 06 61   .......#....X..a
-0401160  40 49 13 00 8D 38 84 F5 1E 0A 16 10 24 7C 60 97   @I...8......$|`.
-0401200  7C FB 00 A5 E6 1A E0 4E DB DF 68 5F BB 57 2D F9   |......N..h_.W-.
-0401220  53 AB CC 55 59 6D DB 01 FF CF 04 23 B2 10 15 EE   S..UYm.....#....
-0401240  58 1F 94 61 46 02 31 87 0D 76 84 90 A4 A5 24 EC   X..aF.1..v....$.
-0401260  15 1A 6C 20 35 91 6A 48 5A 05 AA 3D 1D 81 38 93   ..l 5.jHZ..=..8.
-0401300  A5 A6 91 E9 FF B6 16 40 49 20 40 34 FF CF 44 23   .......@I @4..D#
-0401320  8A 10 0B 4C 4F 1A D0 20 E0 0B 2A 7C 12 14 54 41   ...LO.. ..*|..TA
-0401340  0B 0C CD 8E 61 11 B3 10 29 67 0A C5 59 D1 EA 46   ....a...)g..Y..F
-0401360  AA 4A BF 6E A9 4B 58 03 7A 38 C5 37 A6 9D 81 AC   .J.n.KX.z8.7....
-0401400  35 FF CF 04 23 AA 10 06 52 57 0F D0 48 10 05 2E   5...#...RW..H...
-0401420  11 74 A9 D2 70 8A EF 55 98 42 08 F2 CB DD C2 30   .t..p..U.B.....0
-0401440  54 ED F7 6F 6B 5B 00 09 CC E0 4F A6 C7 7F 84 64   T..ok[....O....d
-0401460  69 35 90 AC DD FF CF 04 23 5A 10 09 E2 44 1F 12   i5......#Z...D..
-0401500  23 46 BB E8 A2 AA 95 0C 3A 4A DE 6F 0A E5 78 94   #F......:J.o..x.
-0401520  2E AD CE F6 AF 6D 5B 00 C3 C4 91 11 23 07 9B 6C   .....m[.....#..l
-0401540  E5 7C C1 2A 7C 12 25 14 8F FF CF 04 23 7A 10 11   .|.*|.%.....#z..
-0401560  6C 5B 0A 06 41 02 33 1C DD 4A 25 81 62 2D CA AB   l[..A.3..J%.b-..
-0401600  32 BA 56 C0 9D 34 A9 1F 28 38 51 00 03 A2 71 C8   2.V..4..(8Q...q.
-0401620  D0 A4 35 AB 49 3F E8 DB 3A DE 68 E3 AE FF CF 44   ..5.I?..:.h....D
-0401640  23 46 10 17 FB 50 1A 9E 21 44 3D 83 D7 79 AE B3   #F...P..!D=..y..
-0401660  4A B0 55 EC 5F 55 B8 42 8B 10 4C E4 84 40 00 1B   J.U._U.B..L..@..
-0401700  28 04 36 F4 84 31 B4 88 78 AD BD A1 97 D1 47 7B   (.6..1..x.....G{
-0401720  37 14 FF CF 04 23 66 10 1B CA 40 1A 5A 52 48 4C   7....#f...@.ZRHL
-0401740  94 9D 09 17 3E 49 F8 0D 64 A9 E1 59 03 A0 26 22   ....&gt;I..d..Y..&amp;&quot;
-0401760  33 44 3C 50 88 44 3A 6C 6B BD 12 31 38 69 3C 6A   3D&lt;P.D:lk..18i&lt;j
-0402000  22 DA 85 B0 F6 85 FF CF 04 23 96 50 1C 65 53 8A   &quot;........#.P.eS.
-0402020  12 18 00 40 BC AA 5A F8 6A 7B C0 01 2E CD 6A 74   ...@..Z.j{....jt
-0402040  CE 1A 6C 9D 50 17 64 4A 5C B1 2D 6A B8 67 4E C2   ..l.P.dJ\.-j.gN.
-0402060  B2 AC 4C 5B 8C 63 BE 3E CE E6 FF CF 04 23 E6 F0   ..L[.c.&gt;.....#..
-0402100  0F 5A 1D 8F F1 18 00 DD EF 5F 9F 7D 79 6F CF DB   .Z......._.}yo..
-0402120  5E BF 9F 71 FD 8F A0 93 2E FF 17 11 9D 44 AC 78   ^..q.........D.x
-0402140  96 65 96 44 BD EF A3 AD D8 57 4F A3 E3 ED FF CF   .e.D.....WO.....
-0402160  04 23 72 B0 0E 62 53 9E 33 08 80 63 12 99 F8 C2   .#r..bS.3..c....
-0402200  3C 1E A8 9E 88 EA 41 75 D8 1C 29 8D 71 CF 4C 58   &lt;.....Au..).q.LX
-0402220  BE 54 36 13 27 4E 8C 2A 75 6A 08 12 09 00 40 EE   .T6.&#39;N.*uj....@.
-0402240  04 37 FF CF 44 23 FC D0 19 79 43 9A F2 18 00 26   .7..D#...yC....&amp;
-0402260  33 10 CF D5 84 56 1B 59 1E 1D 6E 9B 62 34 92 1E   3....V.Y..n.b4..
-0402300  18 5C BE 99 6D 38 35 2A F6 1A 8B 84 A2 68 8C 53   .\..m85*.....h.S
-0402320  F4 FF E7 42 FE EB CF FF CF 04 23 1C 08 80 61 4F   ...B......#...aO
-0402340  BA F1 14 40 E3 3D 59 69 F9 5F 8A 29 6A 6E E9 19   ...@.=Yi._.)jn..
-0402360  EE FE A3 18 00 DC 07 01 FC 61 FF 39 D1 D3 D6 92   .........a.9....
-0402400  DE 9A 5A A3 58 B5 30 1E 4F 29 B8 FF CF 04 23 F8   ..Z.X.0.O)....#.
-0402420  D0 14 E1 F4 F8 63 08 40 2D 26 07 1E FC 10 E4 FC   .....c.@-&amp;......
-0402440  7F F7 FF 7F F2 AE AC 6E E1 FF BA 16 41 05 C6 75   .......n....A..u
-0402460  6F 75 73 31 84 00 73 44 34 22 C7 49 7B 87 81 FF   ous1..sD4&quot;.I{...
-0402500  CF 04 23 98 10 0E FC 58 1F 48 62 60 6B 8C 97 49   ..#....X.Hb`k..I
-0402520  8C 7A B4 FF 85 EA B6 6D 6D 53 00 21 3B 88 C8 63   .z.....mmS.!;..c
-0402540  95 94 DA F1 5E 21 DF 6D 62 C7 B3 2D 2A 1D 5C 54   ....^!.mb..-*.\T
-0402560  EE F7 EF FF CF 44 23 78 10 03 CC 60 1A 94 31 C0   .....D#x...`..1.
-0402600  57 A9 BE D1 A5 4C BD CE 89 52 01 CA E7 88 4D 38   W....L...R....M8
-0402620  AC 4D 52 03 D3 89 5E 24 61 0C 15 5C 0C B7 7B 6F   .MR...^$a..\..{o
-0402640  C5 FF 1B 0C C5 B5 BF 54 FF CF 04 23 C4 10 19 42   .......T...#...B
-0402660  6B 12 12 23 24 6A 19 11 11 EE 3E 00 18 85 82 4D   k..#$j....&gt;....M
-0402700  10 3C EB 58 C1 DA 8F 0B 32 48 52 FC 06 81 9E AB   .&lt;.X....2HR.....
-0402720  BB E0 84 9B FD B7 C8 AB E6 19 15 11 FF CF 04 23   ...............#
-0402740  E4 10 11 DD F4 18 18 61 C7 66 B6 01 08 E3 0E 3D   .......a.f.....=
-0402760  89 34 67 74 22 42 4B C0 18 44 38 40 D0 C7 4E DA   .4gt&quot;BK..D8@..N.
-0403000  96 0E C5 C2 6C 75 69 54 A6 E1 11 DB DA 36 80 84   ....luiT.....6..
-0403020  FF CF 04 23 D4 10 11 C2 D4 18 54 30 40 38 C9 24   ...#......T0@8.$
-0403040  EB B7 9D D0 89 42 F5 53 D2 70 E4 C7 7C 1A AD CE   .....B.S.p..|...
-0403060  74 0C 34 AA 5F 78 F4 5B 55 ED FE AF 69 52 00 1D   t.4._x.[U...iR..
-0403100  3E 9F 11 69 FF CF 44 23 F4 10 07 E1 68 1F 12 62   &gt;..i..D#....h..b
-0403120  42 05 64 47 A5 EC 59 CB 6D F6 8F 25 E7 22 7D 71   B.dG..Y.m..%.&quot;}q
-0403140  D7 3D F6 D9 B3 FE 94 E8 EB FF FF DD 3A 00 54 1C   .=..........:.T.
-0403160  C7 43 37 1E 48 11 84 A8 C0 FF CF 04 23 CC 10 1E   .C7.H.......#...
-0403200  C4 40 1A 46 63 C0 C0 E8 34 32 02 2C 69 85 05 60   .@.Fc...42.,i..`
-0403220  7B 48 5A DE B1 51 EA 54 49 FF 7F EB 12 00 AB C3   {HZ..Q.TI.......
-0403240  74 9D EC 44 F9 7C B7 8D 68 A7 A9 F7 50 FF CF 04   t..D.|..h...P...
-0403260  23 1C 10 1D D2 70 1A 92 21 50 A3 7C 0D CC B0 82   #....p..!P.|....
-0403300  8B 86 0C 14 B5 61 AF AA 69 DF 6D 6B 53 04 D3 21   .....a..i.mkS..!
-0403320  07 12 BC 05 D5 20 60 3B 43 82 2B 95 CF 32 3C 65   ..... `;C.+..2&lt;e
-0403340  49 FF CF 04 23 3C 10 11 D1 68 1A 42 22 4C 3E 95   I...#&lt;...h.B&quot;L&gt;.
-0403360  B5 EA C7 BA D4 BF D5 A6 50 9A 16 E1 FF DA 15 C0   ........P.......
-0403400  50 06 81 38 12 60 03 16 2F DC 58 73 18 8A 6E F8   P..8.`../.Xs..n.
-0403420  28 1D 6D A5 BA FF CF 44 23 02 10 1B D4 70 1A C6   (.m....D#....p..
-0403440  20 40 42 C3 06 0D 96 AE D9 FF 6D 6B 8B 00 93 C4    @B.......mk....
-0403460  42 02 22 8B BC A1 A9 38 BA 27 94 41 74 7C 4D 2F   B.&quot;....8.&#39;.At|M/
-0403500  0C AA 23 E9 DA 5B 6B FF D7 A5 FF CF 04 23 22 10   ..#..[k......#&quot;.
-0403520  1A F2 68 1F 06 63 64 62 E9 11 FF FF AD C0 35 87   ..h..cdb......5.
-0403540  21 05 02 89 94 76 9D D8 1C 78 D1 5C E0 EF 9C 0A   !....v...x.\....
-0403560  DA D2 C7 D2 DC 7C E4 15 91 4A CD 64 FB 05 FF CF   .....|...J.d....
-0403600  04 23 92 10 0E EA 50 1A 5E 62 60 A0 91 CB C8 76   .#....P.^b`....v
-0403620  4C 80 52 B7 DB 52 11 C3 CF 01 82 60 F3 C3 87 05   L.R..R.....`....
-0403640  07 AB E9 8D 4A D8 4A 53 BC 93 46 CF 5B 98 59 A9   ....J.JS..F.[.Y.
-0403660  B3 3B FF CF 04 23 72 D0 1C D9 68 1F 7E 30 44 2B   .;...#r...h.~0D+
-0403700  45 74 3B 1A B4 87 C4 5B EA AE 00 EB B9 5B F8 0A   Et;....[.....[..
-0403720  80 46 07 09 C2 5E 34 08 F1 AE 99 BB 58 5E 9E 14   .F...^4.....X^..
-0403740  AD 3E 40 90 EE AA FF CF 44 23 12 50 97 68 73 1A   .&gt;@.....D#.P.hs.
-0403760  06 23 3A AC 34 E9 FB 8E EF FC 55 0B 40 58 CB 21   .#:.4.....U.@X.!
-0404000  5A D6 A2 E0 4A 93 20 3F DC 4A BF B9 CF EF 7B 54   Z...J. ?.J....{T
-0404020  AB D7 FA FF A5 2E 3B 35 ED A2 66 FF CF 04 23 22   ......;5..f...#&quot;
-0404040  10 1B 4A 4B 9E 12 08 80 6D E9 4F 44 98 51 AE 52   ..JK....m.OD.Q.R
-0404060  C4 93 27 5A 04 0D 36 01 0A 1C 78 B6 64 D3 2C C3   ..&#39;Z..6...x.d.,.
-0404100  A0 85 DC 5B 3F B0 19 40 AA 18 06 00 44 13 1C FF   ...[?..@....D...
-0404120  CF 04 23 E2 08 90 5E 35 90 19 08 00 A8 47 17 2C   ..#...^5.....G.,
-0404140  4A 24 A2 D0 25 CB B5 AB 7E FB BF BC FE CA DA 62   J$..%...~......b
-0404160  74 25 F4 EB 17 67 F7 5D 59 37 04 A2 62 AE 8B 29   t%...g.]Y7..b..)
-0404200  0A 2A 8A FF CF 04 23 B4 F0 53 78 35 95 49 14 00   .*....#..Sx5.I..
-0404220  F7 91 A0 19 5C 82 DA 79 AD F5 BF 9A A8 1C D3 37   ....\..y.......7
-0404240  60 E3 55 34 B6 DC 7B 32 A5 F5 23 8A 00 06 00 A0   `.U4..{2..#.....
-0404260  35 54 6E 52 12 41 12 FF CF 44 23 28 70 00 7D 67   5TnR.A...D#(p.}g
-0404300  BA 91 18 00 8B 46 4E D5 B7 F1 63 C2 F3 51 66 8A   .....FN...c..Qf.
-0404320  9B 0A 3D 7A D2 41 E5 C4 D0 B1 C9 BE CA F1 52 76   ..=z.A........Rv
-0404340  FD 85 C1 90 8B 7A C3 93 6D F7 7D 5B FF CF 04 23   .....z..m.}[...#
-0404360  20 90 02 D1 58 9A 13 08 40 DB 04 33 70 83 CC A2    ...X...@..3p...
-0404400  16 F9 F8 92 8E EA 71 E5 47 7E 9C 86 9A C3 80 35   ......q.G~.....5
-0404420  41 0B AB 3D 3F A7 D2 7F DD 96 EC D7 AE A9 0B 9C   A..=?...........
-0404440  FF CF 04 23 60 50 04 65 5B 0A 86 61 24 00 03 6D   ...#`P.e[..a$..m
-0404460  8C AB 40 F1 29 B1 BA 1F 29 9B 71 5B D2 B9 9C F4   ..@.)...).q[....
-0404500  F0 C8 6A 6F F0 12 15 A0 D5 67 5F DC FD 57 76 59   ..jo.....g_..WvY
-0404520  20 A6 1A 4B FF CF 04 23 20 10 1E 42 5B 0F 12 22    ..K...# ..B[..&quot;
-0404540  22 E5 03 0E 1C 8F A8 95 96 7C C0 2E 18 9A 60 E2   &quot;........|....`.
-0404560  D2 1D 89 B7 EF F0 CA C9 A8 5C F9 17 77 D5 EB FD   .........\..w...
-0404600  BF 7F EB 5A 00 4B 1C 03 FF CF 44 23 90 10 0D EA   ...Z.K....D#....
-0404620  68 1A C6 30 40 28 F8 47 03 F4 1D EB 07 CD CB BB   h..0@(.G........
-0404640  34 02 6B E1 43 33 23 8F D4 DB 36 85 22 EE BD 28   4.k.C3#...6.&quot;..(
-0404660  65 2E 4D 92 43 9C 98 A8 0F 39 2C 32 80 FF CF 04   e.M.C....9,2....
-0404700  23 70 10 0A 5B 47 0F 0C 62 0A A6 49 69 74 FA D1   #p..[G..b..Iit..
-0404720  E0 BF B3 A9 C6 FE 39 83 82 FD D5 5F A2 AA F2 BE   ......9...._....
-0404740  36 96 46 38 75 78 4F AC E6 74 AE 91 EF C9 F9 1F   6.F8uxO..t......
-0404760  E4 FF CF 04 23 C8 10 1E 61 5B 12 88 63 00 0D 81   ....#...a[..c...
-0405000  3E B9 C9 A1 E1 47 D1 DA FE 84 7E 5B 4A 4E FF 35   &gt;....G....~[JN.5
-0405020  4D 1C 00 C5 07 23 16 A1 18 1A 1C D7 4A AE 6A 21   M....#......J.j!
-0405040  BD 19 15 10 23 FF CF 04 23 18 10 05 61 7F 1A 18   ....#...#...a...
-0405060  62 C3 49 77 4E B1 FF B7 DB FC 8C FD 55 2A EE 11   b.IwN.......U*..
-0405100  DF DA 36 06 8D A5 15 8B F4 93 43 2D 70 CF 46 84   ..6.......C-p.F.
-0405120  B1 5C A7 39 52 C1 E2 E7 09 FF CF 44 23 38 10 1F   .\.9R......D#8..
-0405140  C2 60 1F 0C 61 60 EA 69 DA 9D A7 96 79 8B 44 62   .`..a`.i....y.Db
-0405160  9A EB 12 05 C0 0A 0C CC 45 D7 01 10 BB 07 06 97   ........E.......
-0405200  BC 9D 8E 14 CD E1 13 85 65 18 E4 3F BB FE FF CF   ........e..?....
-0405220  04 23 04 10 11 76 5B 1F 58 62 01 FF EF 55 76 F7   .#...v[.Xb...Uv.
-0405240  7D DB 5A 00 73 C8 52 DC 79 8C B8 23 1D 90 CB 11   }.Z.s.R.y..#....
-0405260  D9 F3 C6 86 59 8C E6 A5 BB 17 CD BF 64 B9 CF AA   ....Y.......d...
-0405300  CA E2 FF CF 04 23 24 10 12 D1 68 1A 94 61 C5 69   .....#$...h..a.i
-0405320  6D ED 17 4C 42 00 05 8B BC B2 B2 89 07 8C A3 31   m..LB..........1
-0405340  35 02 A8 74 AC 5C CA 56 A9 00 24 C9 5E 48 F5 54   5..t.\.V..$.^H.T
-0405360  20 26 65 6F 9B 11 FF CF 04 23 94 10 1D 5C 7B 0F    &amp;eo.....#...\{.
-0405400  46 62 20 0A D0 B0 93 62 1B DA B7 38 DC CD 43 50   Fb ....b...8..CP
-0405420  2A 2B 31 9D E5 84 D8 C1 F1 E1 7A ED D0 D8 FF DB   *+1.......z.....
-0405440  B2 EE B7 AD EB 5A 03 C3 A0 33 FF CF 44 23 B4 10   .....Z...3..D#..
-0405460  17 79 5B 0F 5C 62 20 29 4C 4A 88 8A C4 99 D9 58   .y[.\b )LJ.....X
-0405500  96 E6 0D CC 84 15 97 08 8C 04 BB 49 CB EE BE 59   ...........I...Y
-0405520  A9 C0 2B A9 B1 12 28 84 33 F1 D1 5E 1D 62 D2 FF   ..+...(.3..^.b..
-0405540  CF 04 23 8C 10 09 FE 60 1A 1A 22 4A D9 94 5F 77   ..#....`..&quot;J.._w
-0405560  8C 9A 50 27 35 D1 02 B1 19 7C 54 9A AB C9 6A BA   ..P&#39;5....|T...j.
-0405600  6F 4D B5 B3 D7 A6 4C 7F B7 22 64 93 1A 77 BD 70   oM....L..&quot;d..w.p
-0405620  6C B5 75 FF CF 04 23 AC F0 86 66 7D 0A 1E 23 2E   l.u...#...f}..#.
-0405640  9D 12 E3 09 44 EB 19 1B A9 80 9D A7 5B 1B 89 63   ....D.......[..c
-0405660  5C 3A D0 45 0F 23 C7 A8 D0 59 29 CB 09 31 E6 9E   \:.E.#...Y)..1..
-0405700  82 85 84 52 A2 58 85 FF CF 04 23 78 F0 9B 50 63   ...R.X....#x..Pc
-0405720  5A 9A 61 34 28 C3 CA D6 E7 B1 36 CC 0B F7 A1 1E   Z.a4(.....6.....
-0405740  D5 48 A1 F0 4C A2 46 A6 35 96 87 01 B2 B1 51 76   .H..L.F.5.....Qv
-0405760  54 21 BA 72 B3 56 94 DB AC 6D 9B FF CF 44 23 A0   T!.r.V...m...D#.
-0406000  50 18 46 77 9A 92 18 40 18 6F 70 90 4D B7 C0 AA   P.Fw...@.op.M...
-0406020  68 53 72 DA C7 B1 B2 1B 11 4D F1 71 4A 45 6A 14   hSr......M.qJEj.
-0406040  1D 4B 1D A6 D4 47 93 59 4E D4 A6 A8 11 BB AE 00   .K...G.YN.......
-0406060  FF CF 04 23 20 90 05 DC 60 9A F1 08 40 00 60 C0   ...# ...`...@.`.
-0406100  36 14 0D 60 5E A1 B7 87 AE 91 2B 78 EC D1 A0 FF   6..`^.....+x....
-0406120  5F CB 77 F4 02 28 9E 6A 8E 26 50 B9 E7 60 65 A5   _.w..(.j.&amp;P..`e.
-0406140  90 82 E0 3D FF CF 04 23 20 90 1E 58 23 88 F1 08   ...=...# ..X#...
-0406160  00 41 13 37 86 BD 3C CF 1F FE 39 17 FF EF 41 70   .A.7..&lt;...9...Ap
-0406200  C3 55 F2 D0 29 60 85 CA A5 03 01 81 1F 42 01 83   .U..)`.......B..
-0406220  FF FF 74 56 DA 6D 58 DA FF CF 04 23 A0 90 15 D1   ..tV.mX....#....
-0406240  58 9A 61 14 C0 66 69 5B 00 00 08 D6 17 B0 31 DE   X.a..fi[......1.
-0406260  5C 50 19 F5 93 E8 D6 5C 8B 31 21 A0 CE D0 21 EF   \P.....\.1!...!.
-0406300  41 74 A6 FB 92 F9 BA 0C E9 A6 75 5C FF CF 44 23   At........u\..D#
-0406320  A0 90 07 72 47 9F 63 08 00 85 84 C9 A2 B6 85 A6   ...rG.c.........
-0406340  B8 71 E5 DD 79 E3 80 20 87 00 7D 54 4B 46 25 0A   .q..y.. ..}TKF%.
-0406360  78 DE 6E 64 E8 F4 08 01 FA 77 72 AD DD FF 76 6D   x.nd.....wr...vm
-0406400  DA FF CF 04 23 A0 90 10 D6 48 1A 9E 61 54 00 E7   ....#....H..aT..
-0406420  1F 9D 64 73 1A C0 C8 AF DE A6 7D 0A DD 54 0B 86   ..ds......}..T..
-0406440  AA B0 44 44 B6 3E DE 78 A2 28 65 65 AE 54 E9 FF   ..DD.&gt;.x.(ee.T..
-0406460  B6 6D 5B 00 8B FF CF 04 23 E0 10 0C E6 48 1A 06   .m[.....#....H..
-0406500  62 61 EC 06 AF 54 5C B4 CE 76 DB 4C 6D 59 05 2C   ba...T\..v.LmY.,
-0406520  D0 A5 8F AA 37 79 5A 55 D6 B0 D2 65 2A E1 2A E9   ....7yZU...e*.*.
-0406540  8A 02 C5 80 C0 3F 5D 0F 17 FF CF 04 23 B0 10 1A   .....?].....#...
-0406560  C1 48 1F 06 62 66 A3 AA B8 1F 68 CE 27 23 9D BC   .H..bf....h.&#39;#..
-0406600  86 32 53 D8 77 13 FE 7F 92 BC AC 84 19 52 56 5E   .2S.w........RV^
-0406620  29 D4 C4 D0 15 BE 38 7A 1F 22 66 47 02 FF CF 44   ).....8z.&quot;fG...D
-0406640  23 48 10 17 75 4B 0A 12 22 1A 71 40 40 C1 F0 A2   #H..uK..&quot;.q@@...
-0406660  05 63 FB 00 2A 57 4B 25 2F DA 77 42 9C 13 8B 72   .c..*WK%/.wB...r
-0406700  12 01 29 81 0A 11 55 DC 1C E9 54 A6 45 68 24 28   ..)...U...T.Eh$(
-0406720  92 0F FF CF 04 23 68 10 05 64 4B 1A DA 20 00 04   .....#h..dK.. ..
-0406740  F4 60 46 35 28 82 19 01 FB E9 6B 59 72 DB 3A 4D   .`F5(.....kYr.:M
-0406760  5B 00 15 16 2A 81 D7 CA E4 29 5E AD AF 0F 99 DD   [...*....)^.....
-0407000  FF 3E 9C BB A3 7F FF CF 04 23 58 10 08 D4 40 1A   .&gt;.......#X...@.
-0407020  1C 31 C0 56 7A ED DA EE 7F 55 E4 CA 21 0C 10 40   .1.Vz....U..!..@
-0407040  37 24 2C 72 09 77 87 30 3D 42 98 3C 30 63 90 5B   7$,r.w.0=B.&lt;0c.[
-0407060  5F AA FF AF B0 2B DA AB F7 AA FF CF 04 23 04 10   _....+.......#..
-0407100  01 62 A3 0E 06 62 14 58 B6 CE B6 24 6D DB 02 E1   .b...b.X...$m...
-0407120  2D 10 28 C4 F3 F4 4E 80 2E 68 56 BB 3D 00 AE 26   -.(...N..hV.=..&amp;
-0407140  50 5A A7 06 A7 7C 4A 81 66 A2 22 AF CA FA FF CF   PZ...|J.f.&quot;.....
-0407160  04 23 A4 10 19 EC 70 1A 1C 0B 40 2D 6B 0B 04 0F   .#....p...@-k...
-0407200  03 20 53 08 49 F8 7B 38 AA E5 49 1B ED F7 F5 14   . S.I.{8..I.....
-0407220  69 12 0B 6A 0E 0F 6C FA FF 1F B6 A2 E1 66 7B BF   i..j..l......f{.
-0407240  02 E8 FF CF 44 23 94 10 0E D1 48 1A 0C 62 43 69   ....D#....H..bCi
-0407260  68 C8 71 33 3E 57 9E 56 69 59 40 4C 84 58 29 12   h.q3&gt;W.ViY@L.X).
-0407300  40 BA ED 28 E3 CC FF FF 8F F9 85 EA FF 6D 5D 5A   @..(.........m]Z
-0407320  03 D3 4A 25 C6 68 AE FF CF 04 23 F4 10 0D C6 78   ..J%.h....#....x
-0407340  1F 0C 62 46 12 B6 BB 34 A3 2C 44 98 78 93 0B D1   ..bF...4.,D.x...
-0407360  B4 C9 C2 4A 08 46 60 5E 7E A1 E6 19 19 DF B7 A1   ...J.F`^~.......
-0407400  40 C7 6E C4 4C B1 57 96 55 1B 45 FF CF 04 23 CC   @.n.L.W.U.E...#.
-0407420  10 06 F2 70 1A 02 22 41 44 8A 48 32 88 0D 86 C4   ...p..&quot;AD.H2....
-0407440  5C 79 8B 35 1D 4D FF 37 1B AD B4 3B 37 B1 0C B0   \y.5.M.7...;7...
-0407460  86 78 06 0B 86 1C B7 B3 6C AD C0 B7 DE 72 D4 FF   .x......l....r..
-0407500  CF 04 23 1C 10 05 FC 78 1F 1E 31 42 34 46 31 24   ..#....x..1B4F1$
-0407520  07 D6 D2 37 04 D4 35 0A E1 75 8A 93 51 D3 BE 9F   ...7..5..u..Q...
-0407540  F9 FB 5F 88 E8 84 A1 19 F9 59 A8 E5 35 8F AA CE   .._......Y..5...
-0407560  0B A3 6D FF CF 44 23 3C 08 02 76 7D 0A 5E 62 A8   ..m..D#&lt;..v}.^b.
-0407600  7F DA 3F D4 29 80 63 FF 9F 02 01 05 30 5C 25 9A   ..?.).c.....0\%.
-0407620  19 59 70 12 43 8A 07 2D D5 06 B9 10 51 09 EC 37   .Yp.C..-....Q..7
-0407640  ED 64 F1 13 2E 4F AA 5F FF CF 04 23 C4 F0 05 49   .d...O._...#...I
-0407660  6D 2C 1E 62 94 DD E3 73 FD AB 2D 1C 5E EC 2F 7A   m,.b...s..-.^./z
-0407700  67 07 8F 8D 3A 6E EA D5 F7 AF FE DB 6D 3F FD EF   g...:n......m?..
-0407720  A5 DE FF 76 DB DA 38 05 00 87 E9 C8 FF CF 04 23   ...v..8........#
-0407740  D0 D0 14 66 5F 7A 5A 62 40 C2 37 41 B4 9D 74 26   ...f_zZb@.7A..t&amp;
-0407760  4A 57 54 3C B8 84 02 22 DE 5B 60 B0 5C B0 AB E2   JWT&lt;...&quot;.[`.\...
-0410000  B7 E5 57 5F 2F DF 82 29 B9 3F 55 6A 37 D1 4A 62   ..W_/..).?Uj7.Jb
-0410020  FF CF 04 23 A0 90 1B 7C 5D 1A 4A 62 00 00 48 02   ...#...|].Jb..H.
-0410040  49 C4 68 86 3B 0D 51 56 A4 80 88 23 A2 11 B9 60   I.h.;.QV...#...`
-0410060  69 85 AE 68 74 C7 1E AD E0 86 14 F3 E6 1B AC AC   i..ht...........
-0410100  A2 61 66 6D FF CF 44 23 20 90 0B C2 50 1F 88 19   .afm..D# ...P...
-0410120  40 BB 22 69 24 19 1A 1A 33 12 88 34 E3 F4 7E B7   @.&quot;i$...3..4..~.
-0410140  F9 0C 4A 4E 3A CE E5 F3 51 1C 09 0B BE 77 FF 3F   ..JN:...Q....w.?
-0410160  08 45 F7 DF A8 ED BF 7F 5B FF CF 04 23 20 10 0D   .E......[...# ..
-0410200  F6 44 1A 50 32 60 37 00 4D 04 A4 17 00 E6 4C 9E   .D.P2`7.M.....L.
-0410220  FA A5 29 B4 20 C5 B9 72 8A 95 0D 71 2F AB F1 12   ..). ..r...q/...
-0410240  3E C9 A4 09 B6 DD B7 36 ED 5A 20 69 80 FF CF 04   &gt;......6.Z i....
-0410260  23 10 10 17 C7 68 1A 06 22 5A 02 5C 12 6F 05 3C   #....h..&quot;Z.\.o.&lt;
-0410300  98 50 13 07 A0 41 18 1A F4 49 5C BA A4 5A CC 1E   .P...A...I\..Z..
-0410320  D4 6F 8B FF FF 42 FA 56 5B 56 3E 38 28 40 A2 05   .o...B.V[V&gt;8(@..
-0410340  A3 FF CF 04 23 D0 90 14 74 7B 0A D2 30 00 23 23   ....#...t{..0.##
-0410360  D5 95 47 A2 38 68 50 50 25 42 81 57 15 05 C5 63   ..G.8hPP%B.W...c
-0410400  2B 53 63 DA 95 28 B6 AA D9 B6 B6 6D 53 18 03 58   +Sc..(.....mS..X
-0410420  B1 22 AB D4 A1 FF CF 44 23 B0 10 07 C1 70 1A 12   .&quot;.....D#....p..
-0410440  62 52 62 03 58 2E 36 54 C3 C1 45 90 CC 8F 45 8B   bRb.X.6T..E...E.
-0410460  6F 6E ED 02 09 3C D4 7F A1 EE 3B 3B 4D 0B 00 81   on...&lt;....;;M...
-0410500  A5 11 2F D0 A0 00 11 4B 09 52 FF CF 04 23 88 10   ../....K.R...#..
-0410520  0E C2 60 1A 5C 02 F0 90 EF AE 42 54 D5 B0 54 B3   ..`.\.....BT..T.
-0410540  39 8E E0 1C 38 B6 C8 97 6A 1E AE DB F7 17 C0 25   9...8...j......%
-0410560  09 02 AC 8D A3 37 A1 A3 C8 9D 31 B1 65 82 FF CF   .....7....1.e...
-0410600  04 23 68 10 12 DD 64 1F 12 22 6E 4E 32 75 C4 F7   .#h...d..&quot;nN2u..
-0410620  78 C0 49 99 90 AE 54 6E B7 35 6D 9B 00 4F 30 8D   x.I...Tn.5m..O0.
-0410640  BB FB 01 DA 7D 24 CA 22 50 E5 50 15 1A 99 5A 9B   ....}$.&quot;P.P...Z.
-0410660  56 27 FF CF 04 23 D8 10 1A DA 70 1A 0C 63 64 CD   V&#39;...#....p..cd.
-0410700  97 CB 0A CA 4F AB DE BE 75 EB DA 02 E7 B1 97 08   ....O...u.......
-0410720  A4 3A 03 CD A4 9D 3C 06 C2 70 36 CE 22 E3 69 E1   .:....&lt;..p6.&quot;.i.
-0410740  83 F2 B6 6B 65 C4 FF CF 44 23 04 10 19 CE 48 1A   ...ke...D#....H.
-0410760  0C 62 72 B9 9D 55 EA 69 A6 EB 37 A0 C5 09 D8 73   .br..U.i..7....s
-0411000  5E 1C 54 24 95 27 B4 25 9B C5 E4 FC 1C 8E 4A 01   ^.T$.&#39;.%......J.
-0411020  AD 20 3B D8 E2 FF FB B7 55 D9 BF FF CF 04 23 A4   . ;.....U.....#.
-0411040  10 0D C1 58 1F 1E 32 52 76 DD 06 00 E7 2C 03 5F   ...X..2Rv....,._
-0411060  04 05 29 C7 F0 02 E7 C2 51 0E 0D C4 D2 D0 CC C9   ..).....Q.......
-0411100  88 31 63 50 91 27 B5 B2 66 1E E1 FF FF 63 83 FF   .1cP.&#39;..f....c..
-0411120  CF 04 23 94 10 16 D5 58 1A 12 62 76 40 47 94 41   ..#....X..bv@G.A
-0411140  A9 38 5D 7A 2F 21 8D 4C 03 44 60 5B 8F D1 F1 F5   .8]z/!.L.D`[....
-0411160  09 FE 7F 77 6D 94 B1 BB D8 6D 62 03 09 E8 C5 50   ...wm....mb....P
-0411200  86 BB 72 FF CF 04 23 74 10 0C EA 74 1F 94 61 40   ..r...#t...t..a@
-0411220  D5 28 0C F1 A8 D9 6B D8 9D 71 B2 69 30 2C 65 D2   .(....k..q.i0,e.
-0411240  A2 E4 9B D5 E6 54 EF BE B5 ED 5A 00 34 D3 9B 23   .....T....Z.4..#
-0411260  F6 4C 32 26 D6 74 F8 FF CF 44 23 2C 10 1D 79 6F   .L2&amp;.t...D#,..yo
-0411300  1A 12 23 5C 12 BB D1 96 3E 34 1D 21 E1 6A 4B 88   ..#\....&gt;4.!.jK.
-0411320  CE 07 91 6D ED DB 98 6B 9A A6 5D 0B 18 04 01 CA   ...m...k..].....
-0411340  46 0D 36 1A 02 13 BA FA DE F8 5B AC FF CF 04 23   F.6.......[....#
-0411360  9C 10 1F CE 60 1A 9E 61 74 CD 76 97 46 23 27 82   ....`..at.v.F#&#39;.
-0411400  C6 F0 BD E6 3B 93 F0 FF 7B A5 55 D8 52 C8 5A 64   ....;...{.U.R.Zd
-0411420  8D CD E3 8B 0A 42 A7 7F EF B9 EC AB 8E 83 58 FB   .....B........X.
-0411440  FF CF 04 23 3C 90 11 76 5F 1A C6 30 40 7B 19 68   ...#&lt;..v_..0@{.h
-0411460  93 04 1B E3 1C 4D C5 74 34 9E 6B DF 7F E7 6A 82   .....M.t4.k...j.
-0411500  5D A3 B8 77 E1 54 C0 10 EE 68 2A 13 1A AE 4E 5C   ]..w.T...h*...N\
-0411520  0A C1 0F 0A FF CF 04 23 3C D0 0A 71 BD 0D 5A 32   .......#&lt;..q..Z2
-0411540  32 59 02 73 C4 53 13 DB 3B 72 E4 50 11 EF E7 F5   2Y.s.S..;r.P....
-0411560  64 91 13 C1 DB 1C EB E5 E8 D4 BE 77 80 85 FB EA   d..........w....
-0411600  F5 7F 59 08 B6 00 D3 1A FF CF 44 23 AC D0 07 6B   ..Y.......D#...k
-0411620  AD 12 52 22 0E 48 3A E1 6C 70 23 75 84 E0 5D 84   ..R&quot;.H:.lp#u..].
-0411640  B1 36 B6 50 4E 44 18 10 8B D0 C4 50 BC F5 46 5D   .6.PND.....P..F]
-0411660  89 95 77 A7 13 67 EB FF FF 45 62 4B D4 FF CF 04   ..w..g...EbK....
-0411700  23 B4 50 0E 7E 1D 03 CC 48 08 4E 97 66 B1 77 C3   #.P.~...H.N.f.w.
-0411720  E6 C9 1E F0 70 C0 E4 A8 B0 4D 81 16 84 75 B2 9B   ....p....M...u..
-0411740  49 43 B3 A1 48 A0 2E 5A 6F 2B 92 7F 57 FB BF 6F   IC..H..Zo+..W..o
-0411760  DC FF CF 04 23 54 50 0D 7E 5B 1A 02 33 0A 65 B8   ....#TP.~[..3.e.
-0412000  2C 53 05 1C 5F 47 16 24 5F E2 41 81 3F 69 A5 E1   ,S.._G.$_.A.?i..
-0412020  26 BC 45 19 31 39 6A 02 B6 ED 24 8F 8A 06 F5 C2   &amp;.E.19j...$.....
-0412040  BA E4 A4 25 AA FF CF 04 23 64 D0 10 41 2D 04 D2   ...%....#d..A-..
-0412060  48 12 FA 49 F5 F2 FF AF AB 69 97 B4 D9 D6 0D 61   H..I.....i.....a
-0412100  1E 08 8D 64 9F 13 C5 08 16 66 77 01 10 38 2C 8E   ...d.....fw..8,.
-0412120  14 A2 26 16 05 E7 ED 26 86 FF CF 44 23 04 90 0A   ..&amp;....&amp;...D#...
-0412140  CE 48 1A 88 21 50 DB 8A 51 79 56 A8 40 19 54 20   .H..!P..QyV.@.T 
-0412160  8E DA C2 3B 76 77 BE 74 CB 69 38 01 FB B5 7B 0D   ...;vw.t.i8...{.
-0412200  03 63 88 5E E1 D0 8C 76 AD AC DB 4F 26 FE FF CF   .c.^...v...O&amp;...
-^C
-</pre>
+
+<body>
+<div class="top">
+      <img class="logo" src="https://i.postimg.cc/tgT9zQt8/sololearn.png " alt="" />
+      <h1> Menu <i class="fa fa-bars" aria-hidden="true"></i> </h1> 
 </div>
-<SCRIPT TYPE="text/javascript"><!--
- setTimeout(function(){},0);var p=0,q=-12;function a(){if(window.setTimeout&&document.getElementsByTagName){var o=12*(2<<6);var b=document.getElementsByTagName("pre")[0];b.style.top=(p-o)+"pt";var l=document.getElementsByTagName("b");var o=-(p-o)+"pt";for(var a in l){if(l[a].style)l[a].style.top=o;}p+=q;if(p<-2<<9||p>=0)q=-q;window.setTimeout(this.a,2<<6);}}a();//--></SCRIPT></body>
+<div class="section_1">
+    <div class="content">
+    <h1 class="h_1">The best way to learn to code </h1>
+      <div class="s_1"></div>
+   <div class="s_2"></div>
+   <div class="s_3"></div>
+   <div class="s_4"></div>
+   <div class="s_5"></div>
+   <div class="s_6"></div>
+   <div class="s_7"></div>
+   <div class="s_8"></div>
+   <div class="s_9"></div>
+   <div class="s_10"></div>
+      <p class="p_1">Courses designed by experts with real-world practice. Join our global community.<b>it's free</b></p>
+         <button class="btn_1" type="button ">Start learning now!</button>
+   <div class="line">
+     <span class="li_1"></span>
+     <span class="tx_1">or</span>
+     <span class="li_2"></span>
+     </div>
+    <button class="btn_2" type="button">
+       <i class="fa fa-google" aria-hidden="true"></i>
+       Google</button>
+     <button class="btn_3" type="button">
+       <i class="fa fa-facebook-square" aria-hidden="true"></i>
+       Facebook</button>
+       
+    </div>
+</div>
+<div class="course">
+  <img class="c_1" src="https://i.postimg.cc/hPrsV89s/1073.png" alt="" />
+  <img class="c_2" src="https://i.postimg.cc/Qt3K6wDT/1051.png " alt="" />
+  <img class="c_3" src="https://i.postimg.cc/63cqMQzk/1068.png" alt="" />
+  <img class="c_4" src="https://i.postimg.cc/152tC2c3/1024.png" alt="" />
+  <img class="c_5" src="https://i.postimg.cc/zBxDncG5/1165.png" alt="" />
+  <img class="c_6" src="https://i.postimg.cc/xdh877SR/1080.png" alt="" />
+    <img class="c_7" src="https://i.postimg.cc/GtQccg66/1014-1.png" alt="" />
+    <img class="c_8" src="https://i.postimg.cc/zBmNrY2x/1023-1.png" alt="" />
+    <img class="c_9" src="https://i.postimg.cc/Kzh6Wr4V/1162-1.png" alt="" />
+    <img class="c_10" src="https://i.postimg.cc/BQzwycVg/1169.png" alt="" />
+    <img class="c_11" src="https://i.postimg.cc/mrsVfdNQ/1161.png" alt="" />
+    <img class="c_12" src="https://i.postimg.cc/CMQNLMsM/1060.png" alt="" />
+    <img class="c_13" src="https://i.postimg.cc/PqybGdqj/1147.png" alt="" />
+    <img class="c_14" src="https://i.postimg.cc/jdfzxHjv/1093.png " alt="" />
+    <img class="c_15" src="https://i.postimg.cc/pdLkksfk/1094.png" alt="" />
+</div>
+<div class="cards">
+ <div class="card">
+   <img src="https://i.postimg.cc/cLnTzv2t/Screenshot-20220115-105908-2.png " alt="" />
+   <h3>Tailored to you</h3>
+   <p>
+     No matter your experience level, you'll be writing <b>real, functional code within minutes </b>of starting your first course. 
+   </p>
+ </div>
+ <div class="card">
+   <img src="https://i.postimg.cc/mZPd9pjS/Screenshot-20220115-105942-2.png " alt="" />
+   <h3>Bite-sized</h3>
+   <p>Go step-by-step through our unique courses. Assess what you’ve learned with in-lesson quizzes, and <b>gradually advance your skills with practiced. </b></p>
+ </div>
+ <div class="card">
+   <img src="https://i.postimg.cc/YqcxWrhp/Screenshot-20220115-110011-2.png " alt="" />
+   <h3>Get proof</h3>
+   <p><b>Earn a certificate</b> to validate your newly acquired skills. 
+Post it on social for others to see.</p>
+ </div>
+ <div class="card">
+   <img src="https://i.postimg.cc/NfF1YThR/Screenshot-20220115-110038-2.png " alt="" />
+   <h3>More than 20 courses </h3>
+   <p>From Python, through data, to web dev.<b> We got everything you need.</b></p>
+   <a class="c_link" href="#"><b>Go to courses></b></a>
+ </div>
+ <div class="s_card">
+   <img class="img_1" src="https://i.postimg.cc/kXNcsH6w/Screenshot-20220115-130702-2.png" alt="" />
+   <h3>Learning on the go</h3>
+   <p><b>Learn on the web or on the go.</b> Sololearn is always ready for you and you'll never lose your place.</p>
+   <img class="img_2" src="https://i.postimg.cc/CL85ky2r/antalya-turkey-september-21-2020-260nw-1931705552-2.jpg" alt="" />
+ </div>
+</div>
+<div class="section_3">
+  <h1>The perfect platform to boost your technical skills</h1>
+  <div class="card_1">
+    <img src="https://i.postimg.cc/7P3cG8J9/Screenshot-20220115-133853-2.png" alt="" />
+    <h3>Students</h3>
+    <p>Prepping for the big test or want to ace your first interview? Use Sololearn's real-world practice to reinforce what you've learned and get you ready for that big moment.</p>
+  </div>
+  <div class="card_1">
+    <img src="https://i.postimg.cc/mgH7kRt2/Screenshot-20220115-133858-2.png" alt="" />
+    <h3>Professionals</h3>
+    <p>You can learn something totally new to advance your career. Or maybe you just want to knock off the rust. Try Sololearn to get access to a variety of courses, from machine learning to web development.</p>
+  </div>
+</div>
+<div class="section_4">
+<h2>Supportive community</h2>
+<h1>49,241,847</h1>
+<p>Share your code or questions and get instant feedback or become a creator and spread your knowledge and experience with our global community of learners. </p>
+<div class="container_img">
+<div class="l_img">
+<img class="img_1" src="https://i.postimg.cc/TY8ccCz7/community-user-15.png" alt="" />
+<img class="img_2" src="https://i.postimg.cc/MTvY94Z4/community-user-10.png" alt="" />
+<div class="blue-dot"></div>
+<img class="img_3" src="https://i.postimg.cc/zffwfMhB/community-user-4-1.png" alt="" />
+</div>
+<div class="r_img">
+<div class="blue-dot_1"></div>
+<img class="img_4" src="https://i.postimg.cc/xjmvqLXK/community-user-1.png " alt="" />
+<img class="img_5" src="https://i.postimg.cc/9FV7MK5h/community-user-2.png " alt="" />
+<img class="img_6" src="https://i.postimg.cc/85LGtTT5/community-user-14.png" alt="" />
+<img class="img_7" src="https://i.postimg.cc/BbJNLfpk/community-user-13.png" alt="" />
+<img class="img_8" src="https://i.postimg.cc/gj4krM8z/community-user-7.png" alt="" />
+<div class="blue-dot_2"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="section_5">
+  <h1 class="h1">We have helped hundreds of <br /></h1>
+  <h1 class="h2">to finally <span> land a dream job</span></h1>
+</div>
+<div class="section_6">
+  <h1>Why <code>Code <span>|</span></code></h1>
+  <div class="wrapper">
+  <div class="card_2">
+    <img src="https://i.postimg.cc/hG0qksNb/Screenshot-20220115-170112-5.png" alt="" />
+    <div class="card_content">
+      <h1>It’s popular </h1>
+      <p><b>Technical skills are in high demand.</b> Over 60% of new jobs worldwide will require tech skills.</p>
+    </div>
+  </div>
+  <div class="card_2">
+    <img src="https://i.postimg.cc/jdBgKzhm/Screenshot-20220115-152025-2.png" alt="" />
+    <div class="card_content">
+      <h1>It's promising</h1>
+      <p>Unlock your earning potential! Entry-level programmers in the U.S. earn on <b>average over $78,000 in salary.</b></p>
+    </div>
+  </div>
+  <div class="card_2">
+    <img src="https://i.postimg.cc/fR4K1Mzh/Screenshot-20220115-152029-2.png" alt="" />
+    <div class="card_content"> 
+    <h1>It’s fun </h1>
+    <p>Imagine combining your passion and skill with your creativity, and <b> making something new everyday!</b></p>
+    </div>
+  </div>
+    </div>
+  <p class="para">Start right here on Sololearn by coding with our Code Playground and posting your coolest projects for all to see!</p>
+         <button class="btn_1" type="button ">Start learning </button>
+</div>
+<div class="section_7">
+  <h1>Invest in yourself with <span>PRO</span></h1>
+  
+  <div class="pro_cards">
+    <div class="pro">
+      <h2>Unlimited practice</h2>
+      <h4>2x</h4>
+      <p>
+        Pro users are twice as likely to incorporate practice in their learning plan
+      </p>
+    </div>
+    <div class="pro">
+      <h2>Ad-free experience</h2>
+      <h4>+132%</h4>
+      <p>Pro users spend 132% more time learning than regular ones.</p>
+    </div>
+    <div class="pro">
+      <h2>Habit formation</h2>
+      <h4>92%</h4>
+      <p>Pro users that set up daily goals have the highest lesson completion rate of 92%!</p>
+    </div>
+  </div>
+  <ul>
+    <li>Unlimited practice</li>
+    <li>Ad-free experience</li>
+    <li>Progress statistics</li>
+    <li>Daily goals</li>
+    <li>Habit building features</li>
+    <li>Lesson shortcuts</li>
+    <li>Real life challenges</li>
+  </ul>
+    <button class="gold_btn" type="button">Start learning like a pro</button>
+
+</div>
+<div class="section_8">
+  <img src="https://i.postimg.cc/9ffsn4D2/success-story-1-1.jpg" alt="" />
+  <h1>The Success Story of <span>Hatsy</span></h1>
+  <p>"One day at the library, I noticed a stranger using an app that featured tutorials, questions, and exercises for C++ programming. It was Sololearn. I thought, "Neat, learning on your mobile phone!" I was just starting to learn to code and I made all the usual beginner mistakes, so I gave Sololearn a try. Through Sololearn, I have found many learners who have helped me grow. I have met teachers, engineers, developers, data scientists, and more amazing people. The learning environment created by Sololearn served as a catalyst for me to pick up good practices, which go beyond learning and into the workplace."
+  <br /> <br />Hatsy Rei, June 01, 2020
+  </p>
+  <hr />
+  <h4>❤️ Thank you Hatsy! </h4>
+</div>
+<div class="footer">
+  <h1>Coding has never been easier</h1>
+           <button class="btn_1" type="button ">Start learning now!</button>
+</div>
+<footer>
+  <span>
+    <i class="fa fa-linkedin" aria-hidden="true"></i> <p>follow us on linkenin</p></span>
+    <span>
+    <i class="fa fa-twitter" aria-hidden="true"></i>  <p>see what we tweet about </p>
+     </span>
+     <span>
+       <i class="fa fa-youtube-play" aria-hidden="true"></i>
+     <p>Watch our YouTube</p>
+     </span>
+     <span>
+       <i class="fa fa-facebook" aria-hidden="true"></i>
+    <p>check out our Facebook</p> </span>
+    <span>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    <p>join our <br />instagram</p>
+    </span>
+    
+</footer>
+<div class="icon_div">
+     <img src="https://i.postimg.cc/sxY5zMSH/Daco-173159.png " alt="" />
+</div>
+<div class="links">
+  <span>Home</span>
+  <span>FAQ</span>
+  <span>Courses</span>
+  <span>Contact</span>
+  <span>Code Playground</span>
+  <span>Careers <h5>We're hiring</h5></span>
+  <span>Top learners</span>
+  <span>Terms of Use</span>
+  <span>Blog</span>
+  <span>Privacy policy</span>
+  <span>Pro</span>
+</div>
+<div class="author">Made with ❤️ by <span>aim </span>| © 2022</div>
+</body>
+  <script type="text/javascript" charset="utf-8">
+    window.addEventListener("scroll" ,function(){
+      var navbar = document.querySelector(".top") ;
+      navbar.classList.toggle("sticky", window.scrollY > 600);
+    });
+  </script>
+  <!-- pop up by san-->
+  <script src="https://rawcdn.githack.com/san-xyz/Aim-youtube-popup/9e41eb9de9a40c059a0f67d11c40de9b2f48dd65/File.js"></script>
 </html>
