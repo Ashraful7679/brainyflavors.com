@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            overflow-y: scroll;
+          float: left;
+          width: 30%;
+          height: 800px; /* only for demonstration, should be removed */
+          background: rgb(255, 255, 255);
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+         
+          list-style-type: none;
+          padding: 0;
+        }
+        .location-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgb(66 66 66 / 20%);
+        }
+        article {
+          float: left;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 800px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+           li {
+            width: 100%;
+            /* border: 1px solid rgb(2, 2, 2); */
+            /* padding: 50px; */
+            margin: 2px;
+            }
+
+            .iframeContainer{
+                position: relative;
+                width: 100%;
+                height: 800px;
+                overflow: hidden;
+
+            }
+
+            .iframeContent{
+                position: absolute;
+                top: -62px;
+                width: 1500px;
+                height: 2000px;
+            }
+        </style>
+</head>
+<body>
+
+
+<header>
+  <h2>Maps</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://twicedaily.com/locations/2961-decherd-blvd-winchester-tn/" class="h4">Store Location #7751</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>2961 Decherd Blvd</div>
+                    <div>Winchester, Tennessee 37398</div>
+                </div>
+                <div>
+                    <a href="tel:(931) 962 - 0391">(931) 962 – 0391</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="https://www.google.com/maps/place/2961+Decherd+Blvd,+Winchester,+TN,+USA+TN+37398">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+    <li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-adelanto-16898-sportsman-center/" class="h4">GIBA066</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>16898 Sportsman Center</div>
+                    <div>Adelanto, CA 92301-3440</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-ambler-401-church-st/" class="h4">GIBA089</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>401 Church St</div>
+                    <div>Ambler, PA 19002-5811</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-barstow-1390-east-main-street/" class="h4">GIBA027</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>1390 E Main St</div>
+                    <div>Barstow, CA 92311-3220</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-bellflower-10159-alondra-boulevard/" class="h4">GIBA065</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>10159 Alondra Blvd</div>
+                    <div>Bellflower, CA 90706-3903</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href=" class="h4">GIBA091</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>331 S New St</div>
+                    <div>Bethlehem, PA 18015</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-carson-241-east-albertoni-street/" class="h4">GIBA080</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>241 E Albertoni St</div>
+                    <div>Carson, CA 90746-1423</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-cathedral-city-67625-east-palm-canyon-drive/" class="h4">GIBA041</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>67625 E Palm Canyon Dr</div>
+                    <div>Cathedral City, CA 92234</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-cathedral-city-27900-date-palm-drive/" class="h4">GIBA083</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>27900 Date Palm Dr</div>
+                    <div>Cathedral City, CA 92234-4800</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-cathedral-city-31350-bob-hope-drive/" class="h4">GIBA028</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>31350 Bob Hope Dr</div>
+                    <div>Cathedral City, CA 92234</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-chula-vista-3733-main-st/" class="h4">GIBA003</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>3733 Main Street</div>
+                    <div>Chula Vista, CA 91911</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-clovis-825-north-willow-avenue/" class="h4">GIBA032</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>825 N Willow Ave</div>
+                    <div>Clovis, CA 93611</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href=" class="h4">GIBA075</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>48055 Grapefruit Blvd</div>
+                    <div>Coachella, CA 92236</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-colton-1609-west-valley-boulevard/" class="h4">GIBA056</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>1609 W Valley Blvd</div>
+                    <div>Colton, CA 92324-1009</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-compton-912-n-long-beach-blvd/" class="h4">GIBA017</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>912 N Long Beach Blvd</div>
+                    <div>Compton, CA 90221-2229</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-corona-2240-compton-avenue/" class="h4">GIBA064</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>2240 Compton Ave</div>
+                    <div>Corona, CA 92881-7255</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-corona-785-n-main-st/" class="h4">GIBA033</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>785 N Main St</div>
+                    <div>Corona, CA 92880-1440</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-cypress-4988-ball-rd/" class="h4">GIBA067</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>4988 Ball Rd</div>
+                    <div>Cypress, CA 90630-3516</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-cypress-5012-lincoln-avenue/" class="h4">GIBA063</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>5012 Lincoln Ave</div>
+                    <div>Cypress, CA 90630-2905</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-desert-hot-springs-20000-north-indian-canyon-drive/" class="h4">GIBA054</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>20000 N Indian Canyon Dr</div>
+                    <div>Desert Hot Springs, CA 92240</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-dillon-905-radford-blvd/" class="h4">GIBA070</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>905 Radford Blvd</div>
+                    <div>Dillon, SC 29536-5009</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-dillon-1305-u-s-301-501/" class="h4">GIBA069</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>1305 US-301 #501</div>
+                    <div>Dillon, SC 29536-4606</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-downey-9040-imperial-hwy/" class="h4">GIBA010</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>9040 Imperial Hwy</div>
+                    <div>Downey, CA 90242-2738</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-el-cajon-2410-fletcher-parkway/" class="h4">GIBA007</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>2410 Fletcher Pkwy</div>
+                    <div>El Cajon, CA 92020-2105</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-el-cajon-340-e-bradley-ave/" class="h4">GIBA035</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>340 E Bradley Ave</div>
+                    <div>El Cajon, CA 92021-2925</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-escondido-132-e-mission-ave/" class="h4">GIBA019</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>132 E Mission Ave Unit A</div>
+                    <div>Escondido, CA 92025-1858</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-fresno-5665-north-figarden-drive/" class="h4">GIBA062</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>5665 N Figarden Dr</div>
+                    <div>Fresno, CA 93722</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-garden-grove-13960-south-harbor-boulevard/" class="h4">GIBA085</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>13960 Harbor Blvd</div>
+                    <div>Garden Grove, CA 92843-4013</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-garden-grove-13361-harbor-blvd/" class="h4">GIBA079</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>13361 Harbor Blvd</div>
+                    <div>Garden Grove, CA 92843-1723</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-glendale-4520-san-fernando-rd/" class="h4">GIBA020</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>4520 San Fernando Rd</div>
+                    <div>Glendale, CA 91204-1912</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-glenside-2202-mount-carmel-avenue/" class="h4">GIBA097</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>2202 Mt Carmel Ave</div>
+                    <div>Glenside, PA 19038-4610</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-glenside-630-bethlehem-pike/" class="h4">GIBA095</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>630 Bethlehem Pike</div>
+                    <div>Glenside, PA 19038</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-huntington-beach-19027-bushard-street/" class="h4">GIBA052</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>19027 Bushard St</div>
+                    <div>Huntington Beach, CA 92646-2431</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-huntington-beach-21452-brookhurst-st/" class="h4">GIBA084</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>21452 Brookhurst St</div>
+                    <div>Huntington Beach, CA 92646-7353</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-indio-81965-indio-boulevard/" class="h4">GIBA088</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>81965 Indio Blvd</div>
+                    <div>Indio, CA 92201</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-indio-41910-jackson-street/" class="h4">GIBA034</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>41910 Jackson St</div>
+                    <div>Indio, CA 92203</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-indio-42250-jackson-st/" class="h4">GIBA055</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>42250 Jackson St Bldg F</div>
+                    <div>Indio, CA 92203</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+<li>
+        <div class="location-card">
+            <div class="title">
+                <a style="text-decoration: none; color: rgb(52, 25, 185);" target="_blank" href="https://instabitatm.com/bitcoin-atm-in-indio-44333-golf-center-parkway/" class="h4">GIBA059</a>
+            </div>
+            <div class="info">
+                <div class="distance"></div>
+                <div>
+                    <div>44333 Golf Center Pkwy</div>
+                    <div>Indio, CA 92203</div>
+                </div>
+                <div>
+                    <a href="tel:(858) 866-9880">(858) 866-9880</a>
+                </div>
+                <div>
+                                                            <a target="_blank" style="color: #333;" href="">Get Directions</a>
+                </div>
+            </div>
+            
+        </div>
+    </li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <div class="iframeContainer">
+        <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gWISLk5uYJOw83phKZmzuZi3thf1jIA&ehbc=2E312F" width="640" height="480"></iframe> -->
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gWISLk5uYJOw83phKZmzuZi3thf1jIA&ehbc=2E312F" class="iframeContent" width="100%" height="800"></iframe>
+    </div>
+</article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
